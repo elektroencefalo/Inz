@@ -1,0 +1,53 @@
+/* Ustawienia tła dla rejestracji i logowania */
+.registration, .login {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: #f4f4f4;
+}
+
+/* Stylizacja karty logowania */
+mat-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 400px;
+  max-width: 90%;
+  margin: 50px auto;
+}
+
+mat-card-header {
+
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Stylizacja pól formularza */
+mat-form-field {
+  width: 100%;
+  margin: 10px 0;
+}
+
+mat-form-field .mat-input-element {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Stylizacja przycisków i linków w formularzu */
+button {
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  vertical-align: middle;
+}

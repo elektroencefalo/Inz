@@ -1,0 +1,58 @@
+<head>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</body>
+
+
+<section class="head">
+  <div class="container flex1">
+    <div class="social">
+      <a href="https://www.facebook.com/profile.php?id=100057188061490" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+
+    <div class="address">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>Wybłyszczów 46-060 Prószków Opolskie</span>
+    </div>
+  </div>
+</section>
+
+<header class="header">
+  <div class="container">
+    <nav class="navbar flex1">
+
+      <ul class="nav-menu" [ngClass]="{'active': isMenuActive}">
+        <li><a [routerLink]="['/home']">Dom</a></li>
+        <li><a [routerLink]="['/about']">O nas</a></li>
+        <li><a [routerLink]="['/stanowiska']">Stanowiska</a></li>
+        <li><a [routerLink]="['/galeria']">Galeria</a></li>
+        <li><a [routerLink]="['/regulamin']">Regulamin i Cennik</a></li>
+        <li *ngIf="!isLogged"><a [routerLink]="['/login']">Login</a></li>
+        <li *ngIf="isLogged"><a (click)="logout()"[routerLink]="['/home']">Log-out</a></li>
+      </ul>
+
+      <div class="hamburger" (click)="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <div class="head_contact">
+        <i class="fas fa-phone-volume"></i>
+        <span>795 379 140</span>
+      </div>
+
+    </nav>
+  </div>
+</header>
+

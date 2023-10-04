@@ -1,0 +1,20 @@
+<div class="container">
+<div class="gallery">
+  <div *ngFor="let image of images; let i = index">
+    <div class="imgbucket">
+      <div class="myImg">
+        <img [src]="image.src" [alt]="image.alt" (click)="openModal(image, i)">
+      </div>
+
+    </div>
+  </div>
+  <!-- The Modal -->
+  <div #myModal class="modal" (click)="closeModal()">
+    <span class="close">&times;</span>
+    <a class="gallary_prev" (click)="showPreviousImage()">&#10094;</a>
+    <img #img01 class="modal-content">
+    <a class="gallary_next" (click)="showNextImage()">&#10095;</a>
+    <div #caption></div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,181 @@
+<head>
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+</head>
+<!-- Add scripts just before the closing </body> tag -->
+<body>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+</body>
+
+<section class="home" id="home">
+  <div class="container">
+    <h1>Ademac</h1>
+
+    <div class="content grid">
+      <div class="box">
+        <span>Stanowisko</span> <br>
+        <input type="number" min="1" max="13" [(ngModel)]="stationNumber" placeholder="1">
+      </div>
+      <div class="box">
+        <span>DATA OD </span> <br>
+        <input type="date" [(ngModel)]="fromDate" placeholder="29/20/2021">
+      </div>
+      <div class="box">
+        <span>DATA DO </span> <br>
+        <input type="date" [(ngModel)]="endDate" placeholder="29/20/2021">
+      </div>
+      <div class="box">
+        <button class="flex1" (click)="navigateToCalendar()">
+          <span>Sprawdź Dostępność</span>
+          <i class="fas fa-arrow-circle-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="wrapper">
+  <div class="container">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <div class="item">
+          <div class="heading">
+            <h5>THE CITY VIEW</h5>
+            <h3>A charming view of the city</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p> Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="item">
+          <div class="heading">
+            <h5>THE CITY VIEW</h5>
+            <h3>A charming view of the city</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p> Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="item">
+          <div class="heading">
+            <h5>THE CITY VIEW</h5>
+            <h3>A charming view of the city</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p> Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+
+
+
+
+
+<section class="timer about wrapper">
+  <div class="background"> </div>
+  <div class="container">
+    <div class="heading">
+      <h5>LAST MINUTE!</h5>
+      <h2>Zobaczymy się za</h2>
+    </div>
+
+    <div id="time" class="flex1 mtop">
+      <div class="clock"><span>{{ days }}</span> <p>Dni</p></div>
+      <div class="clock"><span>{{ hours }}</span> <p>Godziny</p></div>
+      <div class="clock"><span>{{ minutes }}</span> <p>Minuty</p></div>
+      <div class="clock"><span>{{ seconds }}</span> <p>Sekundy</p></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="customer mtop" id="testimonials">
+  <div class="container">
+    <div class="heading">
+      <h5>TESTIMONIALS </h5>
+      <h3>What customers say </h3>
+    </div>
+
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <!-- Place your items here, for example: -->
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excellent Swimming</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="../../assets/images/c1.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Ayman Jensi</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat similar blocks for other testimonials -->
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+
+
+
+
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    slideTransition: 'linear',
+    autoplayTimeout: 4000,
+    autoplaySpeed: 4000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+  })
+</script>
+
+<section class="map top">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10137.357135201273!2d17.8780035!3d50.565056!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711ac3c8a90d8e7%3A0x329ffcebb8070707!2sAdemac!5e0!3m2!1spl!2spl!4v1692748447721!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>

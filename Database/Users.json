@@ -1,0 +1,32 @@
+{
+  "Users": [
+    {
+      "Username": "admin",
+      "Email": "admin@gmail.com",
+      "Password": "admin",
+      "Role": "Admin",
+      "Reservation": null
+    },
+    {
+      "Username": "test1",
+      "Email": "test1@gmail.com",
+      "Password": "test",
+      "Role": "User",
+      "Reservation": null
+    },
+    {
+      "Username": "test2",
+      "Email": "test2@gmail.com",
+      "Password": "test",
+      "Role": "User",
+      "Reservation": null
+    },
+    {
+      "Username": "test3",
+      "Email": "test3@sty.pl",
+      "Password": "test",
+      "Role": "User",
+      "Reservation": null
+    }
+  ]
+}

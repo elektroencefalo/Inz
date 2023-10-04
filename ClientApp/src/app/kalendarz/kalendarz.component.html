@@ -1,0 +1,20 @@
+<app-modal class="center" #modal></app-modal>
+<div class="container">
+
+  <div class="container-row">
+    <h1>{{stationModel.name}}</h1>
+    <button class="btn-left"(click)="saveReservation()">Zapisz rezerwacje</button>
+  </div>
+  <div class="container-row">
+    <br>
+    <div *ngFor="let day of stationModel?.reservationDays">
+      <div class="kafelek" [ngClass]=" {'blue': day.isReserved , 'yellow' : day.isPending } "
+           (click)="setReservation(day)">
+        <div class="justify-content-center align-content-center">
+          <span class="font-29 center">{{day.dateOfReservation | date:"MM/dd"}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

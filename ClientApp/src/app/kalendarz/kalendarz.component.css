@@ -1,0 +1,71 @@
+
+.container-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 300px;
+}
+
+
+.kafelek {
+  padding-left: 2px;
+  margin: 2px;
+  width: 150px; /* or any desired width */
+  height: 60px; /* or any desired height */
+  background-color: blueviolet;
+  opacity: 0.8;
+}
+
+.data {
+  padding-right: 2px;
+}
+
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: deepskyblue;
+  opacity: 0.8;
+}
+
+.yellow {
+  background-color: #CC8C18;
+  opacity: 0.7;
+}
+
+.center {
+  horiz-align: center;
+  vertical-align: center;
+}
+
+.font-29 {
+  font-size: 29px;
+}
+
+.center {
+  padding-left: 25px;
+  margin-top: 15px;
+}
+
+.m-t-50 {
+  margin-top: 50px;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+
+.dialog {
+  height: fit-content;
+  width: 350px;
+}
+
+.btn-left {
+  margin-left: 20px;
+}
+
+.container-row {
+  margin-bottom: 50px !important;
+}
